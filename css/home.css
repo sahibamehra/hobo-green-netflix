@@ -1,0 +1,92 @@
+main {
+    margin-top: 0; /* Adjusted to remove margin */
+    margin-left: 60px; /* Adjusted for the fixed navigation */
+    padding-top: 5%;
+}
+
+.movie-slideshow {
+    background-color: #92d051;
+    border: 2px solid #5b9bd5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-slide {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.movie-slide.active {
+    display: flex;
+}
+
+.movie-info {
+    padding-left: 10%;
+    color: #444;
+    max-width: 50%;
+}
+
+.movie-info h2 {
+    padding-top: 20%;
+    font-weight: bold;
+}
+
+.movie-image {
+    width: 300px;
+    height: auto;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #5b9bd5;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.category h3 {
+    color: #5b9bd5;
+    font-weight: bold;
+} 
+
+.category {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.movie-carousel {
+    display: flex;
+    overflow-x: auto; 
+    border: none; 
+    border: 2px solid #92d051; 
+}
+
+.movie-item {
+    border: 4px solid #5b9bd5; 
+    margin-right: 10px; 
+}
+
+.movie-item:last-child {
+    margin-right: 0; 
+}

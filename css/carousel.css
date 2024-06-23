@@ -1,0 +1,50 @@
+.myNetflix-carousel {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #92d051;
+}
+.myNetflix-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.myNetflix-carousel-item {
+    min-width: 33.33%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.myNetflix-carousel img {
+    width: 220px;
+    height: auto;
+}
+.myNetflix-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+.myNetflix-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.myNetflix-control {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.myNetflix-movie-image {
+    width: 300px;
+    height: auto;
+}
